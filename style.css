@@ -1,0 +1,37 @@
+:root {   
+  --sky-deep: #0d5a75;
+  --gold: #f2b705;    
+  --ink: #17313b;
+  --paper: #fbfaf5;
+}
+
+body { font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; }
+.brand { font-family: Georgia, serif; font-weight: 700; color: var(--sky-deep) !important; }
+.btn-gold { background: var(--gold); color: var(--ink); border: 0; font-weight: 600; }
+.btn-gold:hover { background: #d9a304; color: var(--ink); }
+.card-fact { border: 0; border-left: 6px solid var(--gold); }
+.footer { background: var(--sky-deep); color: #fff; }
+.hero { background: linear-gradient(180deg, #e6f4f9, var(--paper)); }
+.ph { width: 100%; aspect-ratio: 4 / 3; border-radius: 1rem; }
+.ph-culture { background: radial-gradient(circle at 70% 30%, var(--gold) 0 12%, transparent 13%),
+                          linear-gradient(180deg, #bfe3f0 0 60%, var(--steppe) 60% 100%); }
+
+
+.places { padding: 2rem 1rem; }
+.places__wrap { max-width: 72rem; margin: 0 auto; }
+.places__title { font-size: 1.5rem; text-align: center; margin-bottom: 1.25rem; }
+.places__list { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.place h3 { font-size: 1.15rem; margin: 0 0 .5rem; }
+.place p { margin: 0; }
+@media (min-width: 768px) {
+  .places { padding: 3rem 2rem; }
+  .places__title { font-size: 2rem; }
+  .places__list { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .places { padding: 4rem 2rem; }
+  .places__title { font-size: 2.5rem; text-align: left; }
+  .places__list { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .place { padding: 1.5rem; }
+}
